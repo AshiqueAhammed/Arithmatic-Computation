@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "Welcome to Arithmatic Computation & Sorting Program"
 
@@ -16,3 +16,13 @@ echo "Result of third equation: " $equ3
 
 equ4=`expr $a % $b + $c`
 echo "Result of fourth equation" $equ4
+
+#Storing results in Dictionary
+declare -A ArithCompu
+ArithCompu[firstequa]=$equ1
+ArithCompu[secondequa]=$equ2
+ArithCompu[thirdequa]=$equ3
+ArithCompu[fourthequa]=$equ4
+
+echo "The results in Dictionary:" ${ArithCompu[@]}
+echo ""
