@@ -33,3 +33,6 @@ do
 	array[i]=${ArithCompu[$i]}
 	echo ${array[i]}
 done
+
+echo "Decending sorted Array"
+printf "%s\n" "${ArithCompu[@]}" | sort -nr
