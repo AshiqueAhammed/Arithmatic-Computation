@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 echo "Welcome to Arithmatic Computation & Sorting Program"
 
@@ -25,4 +25,11 @@ ArithCompu[thirdequa]=$equ3
 ArithCompu[fourthequa]=$equ4
 
 echo "The results in Dictionary:" ${ArithCompu[@]}
-echo ""
+
+#Read the Dictionary value to Array
+i=1
+for(( i=1; i<=4; i++ ))
+do
+	array[i]=${ArithCompu[$i]}
+	echo ${array[i]}
+done
