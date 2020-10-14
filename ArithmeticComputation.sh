@@ -36,3 +36,6 @@ done
 
 echo "Decending sorted Array"
 printf "%s\n" "${ArithCompu[@]}" | sort -nr
+
+echo "Ascending sorted array"
+printf "%s\n" "${ArithCompu[@]}" | sort -n
